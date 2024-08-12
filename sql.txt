@@ -1,0 +1,9 @@
+CREATE TABLE public.data
+(
+    data_id SERIAL PRIMARY KEY,
+    "time" bigint NOT NULL,
+    temp integer NOT NULL
+);
+
+ALTER TABLE IF EXISTS public.data
+    OWNER to postgres;
